@@ -32,7 +32,8 @@ div.wrapper {
     .marker-list {
         padding: 0 !important;
         max-height: 100%;
-        overflow: scroll;
+        overflow-y: scroll;
+        height: 100vh;
 
         .submit-button {
             & * {
@@ -45,10 +46,15 @@ div.wrapper {
         .description {
             padding: 1em;
             font-size: 0.8em;
-
             .material-icons {
                 margin-right: 24px;
             }
+        }
+
+        .hd--fb-parent {
+            display: flex;
+            align-items: center;
+            margin: 8px;
         }
     }
 }

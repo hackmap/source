@@ -16,21 +16,21 @@ var HackDescription = React.createClass({
         <p>
           {this.props.data.description}
         </p>
-        <p>
-          <FontIcon className="material-icons">schedule</FontIcon>
-          {this.convertDateTime(this.props.data.start)} - {this.convertDateTime(this.props.data.end)}
+        <p className="hd--fb-parent">
+          <FontIcon className="material-icons hd--fb-item">schedule</FontIcon>
+          <span className="hd--fb-item">{this.convertDateTime(this.props.data.start)} - {this.convertDateTime(this.props.data.end)}</span>
         </p>
-        <p>
-          <FontIcon className="material-icons">room</FontIcon>
-          {this.props.data.location}
+        <p className="hd--fb-parent">
+          <FontIcon className="material-icons hd--fb-item">room</FontIcon>
+          <span className="hd--fb-item">{this.props.data.location}</span>
         </p>
-        <p>
-          <FontIcon className="material-icons">group</FontIcon>
-          {this.props.data.organizer}
+        <p className="hd--fb-parent">
+          <FontIcon className="material-icons hd--fb-item">group</FontIcon>
+          <span className="hd--fb-item">{this.props.data.organizer}</span>
         </p>
-        <p>
-          <FontIcon className="material-icons">http</FontIcon>
-          <a href={this.props.data.url} target="_blank">{this.props.data.url}</a>
+        <p className="hd--fb-parent">
+          <FontIcon className="material-icons hd--fb-item">http</FontIcon>
+          <span className="hd--fb-item"><a href={this.props.data.url} target="_blank">{this.props.data.url}</a></span>
         </p>
       </div>
     )
