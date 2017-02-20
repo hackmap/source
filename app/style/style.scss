@@ -46,10 +46,15 @@ div.wrapper {
         .description {
             padding: 1em;
             font-size: 0.8em;
-
             .material-icons {
                 margin-right: 24px;
             }
+        }
+
+        .hd--fb-parent {
+            display: flex;
+            align-items: center;
+            margin: 8px;
         }
     }
 }
