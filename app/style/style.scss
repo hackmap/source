@@ -32,7 +32,8 @@ div.wrapper {
     .marker-list {
         padding: 0 !important;
         max-height: 100%;
-        overflow: scroll;
+        overflow-y: scroll;
+        height: 100vh;
 
         .submit-button {
             & * {
