@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js --progress --colors",
-    "build": "rm -r dist/* && webpack --config webpack.config.js --optimize-minimize && cp index.html ./dist/index.html"
+    "build": "rm -rf dist/* && webpack --config webpack.config.js --optimize-minimize && cp index.html ./dist/index.html"
   },
   "dependencies": {},
   "devDependencies": {
